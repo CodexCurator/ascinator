@@ -1,0 +1,1 @@
+This is v1 of a python tool that has a user gui that lets them quickly turn video files to ascii, it needs to be ported to rust for speed, and it would be nice to be able to use ffmpeg to grab the audio track from a video before its asciinated, and then reattatch the track to the video
