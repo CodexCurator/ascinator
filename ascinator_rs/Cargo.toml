@@ -1,0 +1,21 @@
+[package]
+name = "ascinator_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+egui = "0.27"
+eframe = "0.27" # For running egui applications
+opencv = "0.88" # Check for latest version and features needed
+serde = { version = "1.0", features = ["derive"] }
+serde-pickle = "1.1" # For trying to match Python's pickle format
+bincode = "1.3"      # Alternative binary format
+# std::process::Command is part of the standard library
+crossbeam-channel = "0.5"
+rayon = "1.10"
+rfd = "0.14" # Rust File Dialogs
+rodio = "0.17" # For audio playback
+tokio = { version = "1", features = ["full"] } # For async runtime, might be needed for some GUI interactions or ffmpeg handling
+tracing = "0.1" # For logging
+tracing-subscriber = "0.3" # For setting up logging
+image = "0.25" # For potential image manipulation if needed for ASCII to video rendering later
